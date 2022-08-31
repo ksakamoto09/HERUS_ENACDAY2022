@@ -1,4 +1,5 @@
 name: "HERUS ENAC Day"
+output_dir: "docs"
 navbar:
   title: "HERUS ENAC Day"
   left:
