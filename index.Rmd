@@ -13,6 +13,16 @@ label { display: table-cell; }
 input { display: table-cell; margin: 10px}
 </style>
 
+<p>
+We'd love to keep in touch with you! 
+</p>
+
+<p>
+Feel free to leave your name and email and/or browse our lab with the menu above
+</p>
+
+<br>
+
 <form
     id="my-form"
     method="POST"
@@ -32,9 +42,3 @@ input { display: table-cell; margin: 10px}
 </p><br>
 <button type="submit">submit</button>
 </form>
-
-<br>
-<br>
-  <a href='choices.html'>
-<button class="btn btn-secondary">Next</button>
-</a>
