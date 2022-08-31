@@ -1,0 +1,63 @@
+---
+title: "&nbsp;"
+output:
+  html_document:
+    toc_float: false
+    self_contained: false
+    includes:
+       in_header: lightbox.html
+---
+<style>
+.button {
+    position: relative;
+    margin: 0px 0px 38px calc((100% - 980px) * 0.5);
+    left: 34px;
+    grid-area: 3 / 1 / 4 / 2;
+    justify-self: start;
+    align-self: start;
+}
+</style>
+
+
+```{r setup, include=FALSE}
+##setting code chunks for rest ofz sections no code being shown, and no messages.
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, error = FALSE )
+```
+
+```{r libraries}
+library(htmltools)
+library(bsplus)
+library(magrittr)
+```
+## Perceptions of Sustainable Urban Systems
+
+```{r button1}
+br()
+div(class = "button",
+a(href="#", `data-featherlight`="#sharingEconomy",
+  bs_button("Sharing Economy")),
+
+div(class = "lightbox",
+    id = "sharingEconomy",
+    img(src = "https://www.epfl.ch/labs/herus/wp-content/uploads/2020/07/you-x-ventures-NYMJYXfZG-g-unsplash-1536x864.jpg"),
+    h3("sharing Economy"),
+    p("The consumer and environmental potential of the Sharing Economy: motives, barriers and rebound effects."),
+    a(href = "https://www.epfl.ch/labs/herus/index-html/projects/sharing-economy/", "more info")),
+
+    a(href="#", `data-featherlight`="#SwissSustainabilityIndicators",
+  bs_button("Swiss Sustainability Indicators")),
+
+div(class = "lightbox",
+    id = "SwissSustainabilityIndicators",
+    img(src = "https://www.epfl.ch/labs/herus/wp-content/uploads/2021/04/speedometer-1063350_1280-1280x864.png"),
+    h3("Swiss Sustainability Indicators"),
+    p("Harmonizing urban sustainability measurement initiatives without losing context-relevance. The case of Cercle Indicateurs in Switzerland."),
+    a(href = "https://www.epfl.ch/labs/herus/index-html/projects/swiss-sustainability-indicators/", "more info"))
+)
+```
+
+<div class = "button">
+<a href='topics.html'>
+<button class="btn btn-secondary">back</button>
+</a>
+</div>

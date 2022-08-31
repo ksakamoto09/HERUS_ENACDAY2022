@@ -1,0 +1,18 @@
+name: "HERUS ENAC Day"
+navbar:
+  title: "HERUS ENAC Day"
+  left:
+    - text: "Sign Up"
+      href: index.html
+    - text: "People"
+      href: people.html
+    - text: "Research"
+      href: topics.html
+  right: 
+    - icon: fa-home fa-lg
+      href: https://www.epfl.ch/labs/herus/
+
+output:
+  html_document:
+    theme: united
+    css: css/style.css

@@ -1,0 +1,53 @@
+---
+title: "&nbsp;"
+output:
+  html_document:
+    toc_float: false
+    self_contained: false
+    includes:
+       in_header: lightbox.html
+---
+<style>
+.button {
+    position: relative;
+    margin: 0px 0px 38px calc((100% - 980px) * 0.5);
+    left: 34px;
+    grid-area: 3 / 1 / 4 / 2;
+    justify-self: start;
+    align-self: start;
+}
+</style>
+
+```{r setup, include=FALSE}
+##setting code chunks for rest ofz sections no code being shown, and no messages.
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, error = FALSE )
+```
+
+```{r libraries}
+library(htmltools)
+library(bsplus)
+library(magrittr)
+```
+## Transdisciplinary Research in Sustainability Transformations
+
+```{r button1}
+br()
+div(class = "button",
+    a(href="#", `data-featherlight`="#swissCoronaCitizenScience",
+  bs_button("Swiss Corona Citizen Science")),
+
+div(class = "lightbox",
+    id = "swissCoronaCitizenScience",
+    img(src = "https://www.epfl.ch/labs/herus/wp-content/uploads/2020/12/woman-5380641_1920-1536x864.jpg"),
+    h3("Swiss Corona Citizen Science"),
+    p("A collaborative investigation on housing conditions and wellbeing in times of COVID-19 containment: exploring the social effects of the crisis and co-creating sustainable post-crisis futures."),
+    a(href = "https://www.epfl.ch/labs/herus/index-html/projects/swiss-corona-citizen-science/", "more info"))
+)
+```
+
+<div class = "button">
+<a href='topics.html'>
+<button class="btn btn-secondary">back</button>
+</a>
+</div>
+

@@ -1,0 +1,207 @@
+---
+title: "&nbsp;"
+output:
+  html_document:
+    toc_float: false
+    self_contained: false
+    includes:
+       in_header: lightbox.html
+---
+<style>
+.GFG {
+background-color: white;
+border: 2px solid black;
+color: green;
+padding: 5px 10px;
+text-align: center;
+display: inline-block;
+font-size: 20px;
+margin: 10px 30px;
+cursor: pointer;
+}
+.back {
+background-color: grey;
+border: 2px solid black;
+color: black;
+padding: 5px 10px;
+text-align: center;
+display: inline-block;
+font-size: 12px;
+margin: 10px 30px;
+cursor: pointer;
+}
+.button {
+    position: relative;
+    margin: 0px 0px 38px calc((100% - 980px) * 0.5);
+    left: 34px;
+    grid-area: 3 / 1 / 4 / 2;
+    justify-self: start;
+    align-self: start;
+}
+</style>
+
+```{r setup, include=FALSE}
+##setting code chunks for rest ofz sections no code being shown, and no messages.
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, error = FALSE )
+```
+
+```{r libraries}
+library(htmltools)
+library(bsplus)
+library(magrittr)
+```
+
+## HERUS People
+
+### Head of Laboratory
+
+```{r button1}
+br()
+div(class = "button",
+a(href="#", `data-featherlight`="#claudia",
+  bs_button("Professor Claudia R. Binder")),
+
+div(class = "lightbox",
+    id = "claudia",
+    img(src = "https://people.epfl.ch/private/common/photos/links/265222.jpg?ts=1660131999"),
+    h3("Professor Claudia Binder"),
+    a(href = "https://people.epfl.ch/claudia.binder?lang=en", "more info"))
+)
+```
+
+### Scientists
+
+```{r button2}
+br()
+div(class = "button",
+a(href="#", `data-featherlight`="#Aristide",
+  bs_button("Dr. Aristide Athanassiadis")),
+
+div(class = "lightbox",
+    id = "Aristide",
+    img(src = "https://people.epfl.ch/private/common/photos/links/326088.jpg?ts=1660132148"),
+    h3("Dr. Aristide Athanassiadis"),
+    a(href = "https://people.epfl.ch/aristide.athanassiadis?lang=en", "more info")),
+
+a(href="#", `data-featherlight`="#Mert",
+  bs_button("Dr. Mert Duygan")),
+
+div(class = "lightbox",
+    id = "Mert",
+    img(src = "https://people.epfl.ch/private/common/photos/links/348065.jpg?ts=1660132195"),
+    h3("Dr. Mert Duygan"),
+    a(href = "https://people.epfl.ch/mert.duygan?lang=en", "more info")),
+
+
+a(href="#", `data-featherlight`="#Maria",
+  bs_button("Dr. Maria Hecher")),
+
+div(class = "lightbox",
+    id = "Maria",
+    img(src = "https://people.epfl.ch/private/common/photos/links/324531.jpg?ts=1660132985"),
+    h3("Dr. Maria Hecher"),
+    a(href = "https://people.epfl.ch/maria.hecher?lang=en", "more info")),
+
+a(href="#", `data-featherlight`="#Silvia",
+  bs_button("Dr. Silvia Hostettler")),
+
+div(class = "lightbox",
+    id = "Silvia",
+    img(src = "https://people.epfl.ch/private/common/photos/links/118273.jpg?ts=1660132986"),
+    h3("Dr. Silvia Hostettler"),
+    a(href = "https://people.epfl.ch/silvia.hostettler?lang=en", "more info"))
+)
+
+div( class ="button",
+a(href="#", `data-featherlight`="#Susan",
+  bs_button("Dr. Susan Mühlemeier")),
+div(class = "lightbox",
+    id = "Susan",
+    img(src = "https://people.epfl.ch/private/common/photos/links/267683.jpg?ts=1660132989"),
+    h3("Dr. Susan Mühlemeier"),
+    a(href = "https://people.epfl.ch/susan.muhlemeier?lang=en", "more info")),
+
+a(href="#", `data-featherlight`="#Catarina",
+  bs_button("Dr. Catarina Wall Gago")),
+div(class = "lightbox",
+    id = "Catarina",
+    img(src = "https://people.epfl.ch/private/common/photos/links/169929.jpg?ts=1660132990"),
+    h3("Dr. Catarina Wall Gago"),
+    a(href = "https://people.epfl.ch/catarina.wall?lang=en", "more info"))
+)
+```
+
+
+### Doctoral Assistants
+
+```{r button8}
+br()
+div(class = "button",
+    
+a(href="#", `data-featherlight`="#Matteo",
+  bs_button("Matteo Barsanti")),
+div(class = "lightbox",
+    id = "Matteo",
+    img(src = "https://people.epfl.ch/private/common/photos/links/318435.jpg?ts=1660133276"),
+    h3("Matteo Barsanti"),
+    a(href = "https://people.epfl.ch/matteo.barsanti?lang=en", "more info")),
+
+a(href="#", `data-featherlight`="#Anne",
+  bs_button("Anne Bösch")),
+div(class = "lightbox",
+    id = "Anne",
+    img(src = "https://people.epfl.ch/private/common/photos/links/162616.jpg?ts=1660133279"),
+    h3("Anne Bösch"),
+    a(href = "https://people.epfl.ch/anne.boesch?lang=en", "more info")),
+
+a(href="#", `data-featherlight`="#Gloria",
+  bs_button("Gloria Serra Coch")),
+div(class = "lightbox",
+    id = "Gloria",
+    img(src = "https://people.epfl.ch/private/common/photos/links/274178.jpg?ts=1660133282"),
+    h3("Gloria Serra Coch"),
+    a(href = "https://people.epfl.ch/gloria.serracoch?lang=en", "more info")),
+
+a(href="#", `data-featherlight`="#Giulia",
+  bs_button("Giulia Frigo")),
+
+div(class = "lightbox",
+    id = "Giulia",
+    img(src = "https://people.epfl.ch/private/common/photos/links/332385.jpg?ts=1660133286"),
+    h3("Giulia Frigo"),
+    a(href = "https://people.epfl.ch/giulia.frigo?lang=en", "more info"))
+)
+
+div(class = "button",
+a(href="#", `data-featherlight`="#Melissa",
+  bs_button("Melissa Pang")),
+div(class = "lightbox",
+    id = "Melissa",
+    img(src = "https://people.epfl.ch/private/common/photos/links/255185.jpg?ts=1660133289"),
+    h3("Melissa Pang"),
+    a(href = "https://people.epfl.ch/melissa.pang?lang=en", "more info")),
+
+a(href="#", `data-featherlight`="#Kaz",
+  bs_button("Kaz Sakamoto")),
+div(class = "lightbox",
+    id = "Kaz",
+    img(src = "https://people.epfl.ch/private/common/photos/links/348070.jpg?ts=1660133290"),
+    h3("Kaz Sakamoto"),
+    a(href = "https://people.epfl.ch/kazuki.sakamoto?lang=en", "more info")),
+
+a(href="#", `data-featherlight`="#Ankita",
+  bs_button("Ankita Singhvi")),
+div(class = "lightbox",
+    id = "Ankita",
+    img(src = "https://people.epfl.ch/private/common/photos/links/348099.jpg?ts=1660133293"),
+    h3("Ankita Singhvi"),
+    a(href = "https://people.epfl.ch/ankita.singhvi?lang=en", "more info"))
+)
+
+br()
+```
+<div class = "button">
+<a href='choices.html'>
+<button class="btn btn-secondary">back</button>
+</a>
+</div>

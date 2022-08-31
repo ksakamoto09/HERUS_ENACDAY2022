@@ -1,0 +1,103 @@
+---
+title: "&nbsp;"
+output:
+  html_document:
+    toc_float: false
+    self_contained: false
+    includes:
+       in_header: lightbox.html
+---
+<style>
+
+.button {
+    position: relative;
+    margin: 0px 0px 38px calc((100% - 980px) * 0.5);
+    left: 34px;
+    grid-area: 3 / 1 / 4 / 2;
+    justify-self: start;
+    align-self: start;
+}
+</style>
+
+```{r setup, include=FALSE}
+##setting code chunks for rest ofz sections no code being shown, and no messages.
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, error = FALSE )
+```
+
+```{r libraries}
+library(htmltools)
+library(bsplus)
+library(magrittr)
+```
+## Transition Pathways of Urban Systems
+
+
+```{r button1}
+br()
+div(class = "button",
+a(href="#", `data-featherlight`="#SHEF",
+  bs_button("Environmental Footprint of Housing")),
+
+div(class = "lightbox",
+    id = "SHEF",
+    img(src = "https://www.epfl.ch/labs/herus/wp-content/uploads/2020/07/jules-bss-xMIVhH-LYRE-unsplash-1364x864.jpg"),
+    h3("SHEF"),
+    p("Identifying and promoting practical measures that all building stock owners (cooperatives, institutional owners, private owners etc.), public authorities and tenants can implement to reduce the use of primary resources for housing."),
+    a(href = "https://www.epfl.ch/labs/herus/index-html/projects/shef/", "more info")),
+
+a(href="#", `data-featherlight`="#MoMeEnT",
+  bs_button("Modelling Energy Supply and Demand")),
+
+div(class = "lightbox",
+    id = "MoMeEnT",
+    img(src = "https://www.epfl.ch/labs/herus/wp-content/uploads/2020/11/europe-cities-lights-space-1-910x864.jpg"),
+    h3("MoMeEnT"),
+    p("Modelling demand and supply dynamics in socio-technical energy systems to investigate the active role(s) of residential consumers in the Smart Grid paradigm and assess how residential demand side flexibility can support the energy transition."),
+    a(href = "https://www.epfl.ch/labs/herus/index-html/projects/momeent/", "more info"))
+)
+```
+
+```{r button5}
+div(class = "button",
+    a(href="#", `data-featherlight`="#EDGE",
+  bs_button("Decentralizing Renewable Energy")),
+
+div(class = "lightbox",
+    id = "EDGE",
+    img(src = "https://www.epfl.ch/labs/herus/wp-content/uploads/2022/03/EDGE-1381x864.jpg"),
+    h3("EDGE"),
+    p("Enabling decentralized renewable generation in the Swiss cities, midlands, and the alps."),
+    a(href = "https://www.epfl.ch/labs/herus/index-html/projects/edge/", "more info")),
+
+    a(href="#", `data-featherlight`="#SURE",
+  bs_button("Reslient Energy Supply")),
+
+div(class = "lightbox",
+    id = "SURE",
+    img(src = "https://www.epfl.ch/labs/herus/wp-content/uploads/2021/05/SURE.jpg"),
+    h3("SURE"),
+    p("Improving the resilience of Switzerland’s energy supply: possible transition pathways as well as future disruptive events, related uncertainties and the implications for the energy system and society."),
+    a(href = "https://www.epfl.ch/labs/herus/index-html/projects/sure-2/", "more info"))
+)
+```
+
+```{r button3}
+div(class = "button",
+
+    a(href="#", `data-featherlight`="#InnoNet",
+  bs_button("Diffusion of Energy Innovation")),
+
+div(class = "lightbox",
+    id = "InnoNet",
+    img(src = "https://www.epfl.ch/labs/herus/wp-content/uploads/2022/02/pv_image.jpg"),
+    h3("InnoNet"),
+    p("Diffusion of innovations in the energy landscape: the role of supply and demand side network effects for integrated energy management systems."),
+    a(href = "https://www.epfl.ch/labs/herus/index-html/projects/innonet-energy/", "more info"))
+)
+```
+
+<div class = "button">
+<a href='topics.html'>
+<button class="btn btn-secondary">back</button>
+</a>
+</div>

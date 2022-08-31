@@ -1,0 +1,52 @@
+---
+title: "&nbsp;"
+output:
+  html_document:
+    toc_float: false
+    self_contained: false
+    includes:
+       in_header: lightbox.html
+---
+<style>
+.button {
+    position: relative;
+    margin: 0px 0px 38px calc((100% - 980px) * 0.5);
+    left: 34px;
+    grid-area: 3 / 1 / 4 / 2;
+    justify-self: start;
+    align-self: start;
+}
+</style>
+
+```{r setup, include=FALSE}
+##setting code chunks for rest ofz sections no code being shown, and no messages.
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, error = FALSE )
+```
+
+```{r libraries}
+library(htmltools)
+library(bsplus)
+library(magrittr)
+```
+## Dynamics in Urban Metabolism
+
+```{r button1}
+br()
+div(class = "button",
+a(href="#", `data-featherlight`="#TacticalUrbanism",
+  bs_button("Tactical Urbanism")),
+
+div(class = "lightbox",
+    id = "TacticalUrbanism",
+    img(src = "https://www.epfl.ch/labs/herus/wp-content/uploads/2020/10/IMG_1382-1920x1080.jpg"),
+    h3("Tactical Urbanism"),
+    p("The potential of tactical urbanism to leverage urban sustainability transitions: analysing temporary walking and cycling infrastructure related to COVID-19."),
+    a(href = "https://www.epfl.ch/labs/herus/index-html/projects/tactical-urbanism/", "more info"))
+)
+```
+
+<div class = "button">
+<a href='topics.html'>
+<button class="btn btn-secondary">back</button>
+</a>
+</div>

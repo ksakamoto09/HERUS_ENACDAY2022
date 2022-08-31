@@ -1,0 +1,55 @@
+---
+title: "&nbsp;"
+output:
+  html_document:
+    toc_float: false
+---
+
+
+<style>
+.button {
+    position: relative;
+    margin: 0px 0px 38px calc((100% - 980px) * 0.5);
+    left: 34px;
+    grid-area: 3 / 1 / 4 / 2;
+    justify-self: start;
+    align-self: start;
+}
+</style>
+
+```{r setup, include=FALSE}
+##setting code chunks for rest ofz sections no code being shown, and no messages.
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, error = FALSE )
+```
+
+```{r libraries}
+library(htmltools)
+library(bsplus)
+library(magrittr)
+```
+## HERUS Research Themes
+
+```{r button2}
+br()
+div(class = "button",
+a(href="urbanMetabolism.html", 
+  bs_button("Dynamics in urban metabolism"))
+)
+div(class = "button",
+a(href="pathways.html", 
+  bs_button("Transition pathways of urban systems"))
+)
+div(class = "button",
+a(href="perceptions.html", 
+  bs_button("Perceptions of sustainable urban systems"))
+)
+div(class = "button",
+a(href="transdisciplinary.html", 
+  bs_button("Transdisciplinary research in sustainability transformations"))
+)
+```
+<div class = "button">
+<a href='choices.html'>
+<button class="btn btn-secondary">back</button>
+</a>
+</div>

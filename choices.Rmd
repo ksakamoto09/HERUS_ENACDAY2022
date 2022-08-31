@@ -1,0 +1,43 @@
+---
+title: "&nbsp;"
+output:
+  html_document:
+    toc_float: false
+---
+
+
+<style>
+.button {
+    position: relative;
+    margin: 0px 0px 38px calc((100% - 980px) * 0.5);
+    left: 34px;
+    grid-area: 3 / 1 / 4 / 2;
+    justify-self: start;
+    align-self: start;
+}
+</style>
+
+## Select an Option
+
+```{r setup, include=FALSE}
+##setting code chunks for rest ofz sections no code being shown, and no messages.
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, error = FALSE )
+```
+
+```{r libraries}
+library(htmltools)
+library(bsplus)
+library(magrittr)
+```
+
+
+```{r}
+br()
+div(class = "button",
+    a(href="topics.html",
+  bs_button("Research Topics")),
+
+a(href="people.html",
+  bs_button("People"))
+)
+```
