@@ -44,10 +44,10 @@ br()
 div(class = "button",
     a(href="https://www.epfl.ch/labs/herus/index-html/projects/",
       target="_blank",
-  bs_button(h3("Research Projects"))),
+  bs_button(h4("Research Projects"))),
 
 a(href="https://www.epfl.ch/labs/herus/index-html/team/",
   target="_blank",
-  bs_button(h3("Our People")))
+  bs_button(h4("Our People")))
 )
 ```
