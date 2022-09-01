@@ -248,10 +248,7 @@ $(document).ready(function () {
   <a href="index.html">Sign Up</a>
 </li>
 <li>
-  <a href="people.html">People</a>
-</li>
-<li>
-  <a href="topics.html">Research</a>
+  <a href="choices2.html">More Info</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -278,8 +275,8 @@ $(document).ready(function () {
 <script langauge="JavaScript" src="submitHandler.js"></script>
 <style>
 form  { display: table;      }
-p     { display: table-row;  }
-label { display: table-cell; }
+p     { display: table-row; text-align: center }
+label { display: table-cell;text-align: right }
 input { display: table-cell; margin: 10px}
 </style>
 <p>
@@ -304,6 +301,12 @@ menu above
 <p>
 <label for="email">Email:</label>
 <input name="email" type="email" placeholder="Email" required>
+</p>
+<br>
+<p>
+<label for="interest">How would you like to collaborate with
+HERUS?:</label>
+<input name="interest" type="interest" placeholder="Response" required>
 </p>
 <br> <button type="submit">submit</button>
 </form>

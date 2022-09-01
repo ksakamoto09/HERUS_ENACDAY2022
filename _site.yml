@@ -5,10 +5,12 @@ navbar:
   left:
     - text: "Sign Up"
       href: index.html
-    - text: "People"
-      href: people.html
-    - text: "Research"
-      href: topics.html
+    - text: "More Info"
+      href: choices2.html
+    # - text: "People"
+    #   href: people.html
+    # - text: "Research"
+    #   href: topics.html
   right: 
     - icon: fa-home fa-lg
       href: https://www.epfl.ch/labs/herus/

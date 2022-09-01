@@ -15,10 +15,16 @@ output:
 <!--     justify-self: start; -->
 <!--     align-self: start; -->
 <!-- } -->
+p     { display: table-row; text-align: center }
+h2 { text-align:center}
+.button { text-align:center}
+a{padding: 10px}
+.btn-default{background-color:#ec0c0c;
+            border-color:#ec0c0c}
 </style>
 
 ## For more information
-## select an Opption below
+## select an option below
 
 ```{r setup, include=FALSE}
 ##setting code chunks for rest ofz sections no code being shown, and no messages.
@@ -34,11 +40,14 @@ library(magrittr)
 
 ```{r}
 br()
+br()
 div(class = "button",
     a(href="https://www.epfl.ch/labs/herus/index-html/projects/",
-  bs_button("Research Projects")),
+      target="_blank",
+  bs_button(h3("Research Projects"))),
 
 a(href="https://www.epfl.ch/labs/herus/index-html/team/",
-  bs_button("Our People"))
+  target="_blank",
+  bs_button(h3("Our People")))
 )
 ```

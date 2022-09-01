@@ -10,7 +10,7 @@ window.addEventListener("load", function() {
         })
         .then(() => {
             //alert("Success!");
-            window.location.replace("choices.html");
+            window.location.replace("choices2.html");
         })
     });
 });

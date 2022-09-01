@@ -8,8 +8,8 @@ output:
 
 <style>
 form  { display: table;      }
-p     { display: table-row;  }
-label { display: table-cell; }
+p     { display: table-row; text-align: center }
+label { display: table-cell;text-align: right }
 input { display: table-cell; margin: 10px}
 </style>
 
@@ -39,6 +39,10 @@ Feel free to leave your name and email and/or browse our lab with the menu above
 <p>
   <label for="email">Email:</label>
   <input name="email" type="email" placeholder="Email" required>
+</p><br>
+<p>
+  <label for="interest">How would you like to collaborate with HERUS?:</label>
+  <input name="interest" type="interest" placeholder="Response" required>
 </p><br>
 <button type="submit">submit</button>
 </form>

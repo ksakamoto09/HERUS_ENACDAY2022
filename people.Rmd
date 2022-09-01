@@ -30,14 +30,14 @@ font-size: 12px;
 margin: 10px 30px;
 cursor: pointer;
 }
-.button {
-    position: relative;
-    margin: 0px 0px 38px calc((100% - 980px) * 0.5);
-    left: 34px;
-    grid-area: 3 / 1 / 4 / 2;
-    justify-self: start;
-    align-self: start;
-}
+<!-- .button { -->
+<!--     position: relative; -->
+<!--     margin: 0px 0px 38px calc((100% - 980px) * 0.5); -->
+<!--     left: 34px; -->
+<!--     grid-area: 3 / 1 / 4 / 2; -->
+<!--     justify-self: start; -->
+<!--     align-self: start; -->
+<!-- } -->
 </style>
 
 ```{r setup, include=FALSE}
@@ -56,6 +56,7 @@ library(magrittr)
 ### Head of Laboratory
 
 ```{r button1}
+
 br()
 div(class = "button",
 a(href="#", `data-featherlight`="#claudia",
@@ -91,7 +92,8 @@ div(class = "lightbox",
     img(src = "https://people.epfl.ch/private/common/photos/links/348065.jpg?ts=1660132195"),
     h3("Dr. Mert Duygan"),
     a(href = "https://people.epfl.ch/mert.duygan?lang=en", "more info")),
-
+br(),
+br(),
 
 a(href="#", `data-featherlight`="#Maria",
   bs_button("Dr. Maria Hecher")),
@@ -111,7 +113,7 @@ div(class = "lightbox",
     h3("Dr. Silvia Hostettler"),
     a(href = "https://people.epfl.ch/silvia.hostettler?lang=en", "more info"))
 )
-
+br()
 div( class ="button",
 a(href="#", `data-featherlight`="#Susan",
   bs_button("Dr. Susan Mühlemeier")),
@@ -153,7 +155,8 @@ div(class = "lightbox",
     img(src = "https://people.epfl.ch/private/common/photos/links/162616.jpg?ts=1660133279"),
     h3("Anne Bösch"),
     a(href = "https://people.epfl.ch/anne.boesch?lang=en", "more info")),
-
+br(),
+br(),
 a(href="#", `data-featherlight`="#Gloria",
   bs_button("Gloria Serra Coch")),
 div(class = "lightbox",
@@ -171,7 +174,7 @@ div(class = "lightbox",
     h3("Giulia Frigo"),
     a(href = "https://people.epfl.ch/giulia.frigo?lang=en", "more info"))
 )
-
+br()
 div(class = "button",
 a(href="#", `data-featherlight`="#Melissa",
   bs_button("Melissa Pang")),
